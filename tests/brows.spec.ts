@@ -19,5 +19,6 @@ test('Browse journals and filter it', async ({ page }) => {
   await alphaDropdown.selectOption({ value: '/action/showPublications?PubType=journal&startPage=&alphabetRange=0-9' });
 
   // Step 6: Add assertion to ensure the correct filtering occurs
+  //kavishka 
   await expect(page).toHaveURL(/.*alphabetRange=0-9/);  // Verify the URL after selecting the option
 });
